@@ -1,6 +1,7 @@
 import express from 'express';
 import cookieParser from 'cookie-parser';
 import favicon from 'serve-favicon';
+import serveStatic from 'serve-static';
 import path from 'path';
 import { logger } from '@walk8243/logger';
 
@@ -22,6 +23,8 @@ app.use((req, _, next) => {
 	logger.debug('*'.repeat(30));
 	next();
 });
+
+app.use(serveStatic(path.resolve(__dirname, '../static')));
 
 app.use((_, res) => {
 	res.end('walk8243/inspection-server');
