@@ -1,0 +1,37 @@
+{
+  "name": "inspection-server",
+  "version": "1.0.0",
+  "description": "検証用サーバー",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc --sourceMap false --removeComments true",
+    "build-debug": "npx tsc --build",
+    "clean": "npx tsc --build --clean",
+    "start": "node ./dist/server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walk8243/inspection-server.git"
+  },
+  "keywords": [],
+  "author": "walk8243 <walk8243@gmail.com> (https://www.walk8243.xyz/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/walk8243/inspection-server/issues"
+  },
+  "homepage": "https://github.com/walk8243/inspection-server#readme",
+  "dependencies": {
+    "@walk8243/logger": "^3.0.2",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.8",
+    "typescript": "^4.5.4"
+  }
+}
