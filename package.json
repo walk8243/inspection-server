@@ -7,7 +7,7 @@
     "build": "npx tsc --sourceMap false --removeComments true",
     "build-debug": "npx tsc --build",
     "clean": "npx tsc --build --clean",
-    "start": "node ./dist/server",
+    "start": "node --require dotenv/config ./dist/server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {

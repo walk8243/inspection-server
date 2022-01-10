@@ -2,7 +2,7 @@ import express from 'express';
 import { logger } from '@walk8243/logger';
 
 export const app = express();
-app.locals['port'] = parseInt(process.env['PORT'] ?? '3000');
+app.locals['port'] = parseInt(process.env['PORT'] || '3000');
 
 app.use((req, _, next) => {
 	logger.debug('*'.repeat(30));
