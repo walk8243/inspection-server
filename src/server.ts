@@ -1,4 +1,5 @@
-import { logger } from './logger';
+import 'dotenv/config';
+import logger from './logger';
 import { app } from './app';
 
 app
