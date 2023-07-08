@@ -8,10 +8,11 @@
     "build-debug": "npx tsc --build",
     "clean": "npx tsc --build --clean",
     "start": "node --require dotenv/config ./dist/server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npx tsc --watch"
   },
   "engines": {
-    "node": "14.x"
+    "node": "18.x"
   },
   "repository": {
     "type": "git",
@@ -25,12 +26,12 @@
   },
   "homepage": "https://github.com/walk8243/inspection-server#readme",
   "dependencies": {
-    "@walk8243/logger": "^3.0.2",
     "cookie-parser": "^1.4.6",
     "dotenv": "^10.0.0",
     "express": "^4.17.2",
     "serve-favicon": "^2.5.0",
-    "serve-static": "^1.14.2"
+    "serve-static": "^1.14.2",
+    "winston": "^3.9.0"
   },
   "devDependencies": {
     "@types/cookie-parser": "^1.4.2",

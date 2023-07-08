@@ -3,7 +3,7 @@ import cookieParser from 'cookie-parser';
 import favicon from 'serve-favicon';
 import serveStatic from 'serve-static';
 import path from 'path';
-import { logger } from '@walk8243/logger';
+import { logger } from './logger';
 
 export const app = express();
 app.locals['port'] = parseInt(process.env['PORT'] || '3000');

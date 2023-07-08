@@ -1,4 +1,4 @@
-import { logger } from '@walk8243/logger';
+import { logger } from './logger';
 import { app } from './app';
 
 app
