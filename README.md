@@ -9,6 +9,5 @@
 
 ```.env
 PORT=3000
-LOGGER_CATEGORY=development
 NODE_ENV=production
 ```
